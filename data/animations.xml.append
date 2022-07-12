@@ -1,0 +1,32 @@
+<FTL><!--Instiller Animations-->
+  <animSheet name="instiller_base" w="378" h="49" fw="27" fh="49">weapons_instiller/instiller_base.png</animSheet>
+	<weaponAnim name="instiller_base">
+		<sheet>instiller_base</sheet>
+		<desc length="14" x="0" y="0"/>
+		<chargedFrame>1</chargedFrame>
+		<fireFrame>10</fireFrame>
+		<firePoint  x="13" y="10"/>
+		<mountPoint x="3" y="37"/>
+	</weaponAnim>
+
+  <animSheet name="instiller_projectile_base" w="525" h="35" fw="35" fh="35">projectiles/instiller_projectile_base</animSheet>
+  <anim name="instiller_projectile_base">
+  	<sheet>instiller_projectile_base</sheet>
+  	<desc length="15" x="0" y="0"/>
+  	<time>1.0</time>
+  </anim>
+
+  <animSheet name="instiller_explosion_base" w="576" h="64" fw="64" fh="64">explosions/instiller_explosion_base</animSheet>
+  <anim name="instiller_explosion_base">
+  	<sheet>instiller_explosion_base</sheet>
+  	<desc length="9" x="0" y="0"/>
+  	<time>0.75</time>
+  </anim>
+
+  <animSheet name="instiller_boostanim_base" w="352" h="32" fw="32" fh="32">effects/instiller_boostanim_base.png</animSheet>
+  <anim name="instiller_boostanim_base">
+  	<sheet>instiller_boostanim_base</sheet>
+  	<desc length="11" x="0" y="0"/>
+  	<time>1.0</time>
+  </anim>
+</FTL>

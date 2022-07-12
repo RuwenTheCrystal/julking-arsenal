@@ -1,0 +1,1003 @@
+<FTL><!--Instiller Weapons-->
+
+  <weaponBlueprint name="INSTILLER_BASE">
+  	<type>BOMB</type>
+  	<tip>tip_instiller</tip>
+  	<title>Base Instiller</title>
+  	<short>B. Instill</short>
+  	<desc>This instiller cuts the max health of all hit crew in half</desc>
+  	<tooltip>Instiller tooltip here</tooltip>
+  	<damage>0</damage>
+  	<sysDamage>0</sysDamage>
+  	<persDamage>0</persDamage>
+  	<accuracyMod>30</accuracyMod>
+  	<statBoosts>
+  		<statBoost name="maxHealth">
+  			<boostType>MULT</boostType>
+  			<amount>0.5</amount>
+  			<shipTarget>ALL</shipTarget>
+  			<crewTarget>ALL</crewTarget>
+  			<affectsSelf>true</affectsSelf>
+  			<maxStacks id="instiller_base">3</maxStacks>
+  			<duration>20</duration>
+  			<boostAnim>instiller_boostanim_base</boostAnim>
+  		</statBoost>
+  	</statBoosts>
+  	<shots>1</shots>
+  	<fireChance>0</fireChance>
+  	<breachChance>0</breachChance>
+  	<cooldown>10</cooldown>
+  	<power>1</power>
+  	<cost>60</cost>
+  	<bp>4</bp>
+  	<rarity>3</rarity>
+  	<image>instiller_projectile_base</image>
+  	<explosion>instiller_explosion_base</explosion>
+  	<launchSounds>
+  		<sound>bombTeleport</sound>
+  	</launchSounds>
+  	<hitShipSounds>
+  		<sound>smallExplosion</sound>
+  	</hitShipSounds>
+  	<weaponArt>instiller_base</weaponArt>
+  	<iconImage>bomb</iconImage>
+  </weaponBlueprint>
+
+  <weaponBlueprint name="INSTILLER_NEUROTOXIN_1">
+  	<type>BOMB</type>
+  	<tip>tip_instiller</tip>
+  	<title>Neurotoxin Instiller MK I</title>
+  	<short>Neuro. Instill I</short>
+  	<desc>This instiller does 20 damage to all afflicted crew over 8 seconds, as well as multiplying combat damage and repair speed by 0.8. Also reduces max health to 90%</desc>
+  	<tooltip>Instiller tooltip here</tooltip>
+  	<damage>0</damage>
+  	<sysDamage>0</sysDamage>
+  	<persDamage>0</persDamage>
+  	<accuracyMod>30</accuracyMod>
+  	<statBoosts>
+  		<statBoost name="healAmount">
+  			<boostType>FLAT</boostType>
+  			<amount>-2.5</amount>
+  			<shipTarget>ALL</shipTarget>
+  			<crewTarget>ALL</crewTarget>
+  			<affectsSelf>true</affectsSelf>
+  			<maxStacks id="instiller_neuro_1_dot">3</maxStacks>
+  			<duration>8</duration>
+  			<boostAnim>instiller_boostanim_base</boostAnim>
+  		</statBoost>
+
+      <statBoost name="damageMultiplier">
+  			<boostType>MULT</boostType>
+  			<amount>0.8</amount>
+  			<shipTarget>ALL</shipTarget>
+  			<crewTarget>ALL</crewTarget>
+  			<affectsSelf>true</affectsSelf>
+  			<maxStacks id="instiller_neuro_1_damagemult">3</maxStacks>
+  			<duration>8</duration>
+  		</statBoost>
+
+      <statBoost name="repairSpeed">
+  			<boostType>MULT</boostType>
+  			<amount>0.8</amount>
+  			<shipTarget>ALL</shipTarget>
+  			<crewTarget>ALL</crewTarget>
+  			<affectsSelf>true</affectsSelf>
+  			<maxStacks id="instiller_neuro_1_repair">3</maxStacks>
+  			<duration>8</duration>
+  		</statBoost>
+
+      <statBoost name="maxHealth">
+  			<boostType>MULT</boostType>
+  			<amount>0.9</amount>
+  			<shipTarget>ALL</shipTarget>
+  			<crewTarget>ALL</crewTarget>
+  			<affectsSelf>true</affectsSelf>
+  			<maxStacks id="instiller_neuro_1_maxhealth">3</maxStacks>
+  			<duration>8</duration>
+  		</statBoost>
+
+  	</statBoosts>
+  	<shots>1</shots>
+  	<fireChance>0</fireChance>
+  	<breachChance>0</breachChance>
+  	<cooldown>10</cooldown>
+  	<power>1</power>
+  	<cost>60</cost>
+  	<bp>4</bp>
+  	<rarity>3</rarity>
+  	<image>instiller_projectile_base</image>
+  	<explosion>instiller_explosion_base</explosion>
+  	<launchSounds>
+  		<sound>bombTeleport</sound>
+  	</launchSounds>
+  	<hitShipSounds>
+  		<sound>smallExplosion</sound>
+  	</hitShipSounds>
+  	<weaponArt>instiller_base</weaponArt>
+  	<iconImage>bomb</iconImage>
+  </weaponBlueprint>
+
+  <weaponBlueprint name="INSTILLER_NEUROTOXIN_2">
+  	<type>BOMB</type>
+  	<tip>tip_instiller</tip>
+  	<title>Neurotoxin Instiller MK II</title>
+  	<short>Neuro. Instill II</short>
+  	<desc>This instiller does 45 damage to all afflicted crew over 10 seconds, as well as multiplying combat damage and repair speed by 0.7. Also reduces max health to 80%</desc>
+  	<tooltip>Instiller tooltip here</tooltip>
+  	<damage>0</damage>
+  	<sysDamage>0</sysDamage>
+  	<persDamage>0</persDamage>
+  	<accuracyMod>30</accuracyMod>
+  	<statBoosts>
+  		<statBoost name="healAmount">
+  			<boostType>FLAT</boostType>
+  			<amount>-4.5</amount>
+  			<shipTarget>ALL</shipTarget>
+  			<crewTarget>ALL</crewTarget>
+  			<affectsSelf>true</affectsSelf>
+  			<maxStacks id="instiller_neuro_2_dot">3</maxStacks>
+  			<duration>10</duration>
+  			<boostAnim>instiller_boostanim_base</boostAnim>
+  		</statBoost>
+
+      <statBoost name="damageMultiplier">
+  			<boostType>MULT</boostType>
+  			<amount>0.7</amount>
+  			<shipTarget>ALL</shipTarget>
+  			<crewTarget>ALL</crewTarget>
+  			<affectsSelf>true</affectsSelf>
+  			<maxStacks id="instiller_neuro_2_damagemult">3</maxStacks>
+  			<duration>10</duration>
+  		</statBoost>
+
+      <statBoost name="repairSpeed">
+  			<boostType>MULT</boostType>
+  			<amount>0.7</amount>
+  			<shipTarget>ALL</shipTarget>
+  			<crewTarget>ALL</crewTarget>
+  			<affectsSelf>true</affectsSelf>
+  			<maxStacks id="instiller_neuro_2_repair">3</maxStacks>
+  			<duration>10</duration>
+  		</statBoost>
+
+      <statBoost name="maxHealth">
+  			<boostType>MULT</boostType>
+  			<amount>0.8</amount>
+  			<shipTarget>ALL</shipTarget>
+  			<crewTarget>ALL</crewTarget>
+  			<affectsSelf>true</affectsSelf>
+  			<maxStacks id="instiller_neuro_2_maxhealth">3</maxStacks>
+  			<duration>10</duration>
+  		</statBoost>
+
+  	</statBoosts>
+  	<shots>1</shots>
+  	<fireChance>0</fireChance>
+  	<breachChance>0</breachChance>
+  	<cooldown>10</cooldown>
+  	<power>1</power>
+  	<cost>60</cost>
+  	<bp>4</bp>
+  	<rarity>3</rarity>
+  	<image>instiller_projectile_base</image>
+  	<explosion>instiller_explosion_base</explosion>
+  	<launchSounds>
+  		<sound>bombTeleport</sound>
+  	</launchSounds>
+  	<hitShipSounds>
+  		<sound>smallExplosion</sound>
+  	</hitShipSounds>
+  	<weaponArt>instiller_base</weaponArt>
+  	<iconImage>bomb</iconImage>
+  </weaponBlueprint>
+
+  <weaponBlueprint name="INSTILLER_SERUM_1">
+  	<type>BOMB</type>
+  	<tip>tip_instiller</tip>
+  	<title>Serum Instiller MK I</title>
+  	<short>S. Instill I</short>
+  	<desc>This instiller heals your own crew by 25 health over 10 seconds and gives 0.9x damage taken</desc>
+  	<tooltip>Instiller tooltip here</tooltip>
+  	<damage>0</damage>
+  	<sysDamage>0</sysDamage>
+  	<persDamage>0</persDamage>
+  	<accuracyMod>30</accuracyMod>
+  	<statBoosts>
+  		<statBoost name="trueHealAmount">
+  			<boostType>FLAT</boostType>
+  			<amount>2.5</amount>
+  			<shipTarget>ALL</shipTarget>
+  			<crewTarget>ALLIES</crewTarget>
+  			<affectsSelf>true</affectsSelf>
+  			<maxStacks id="instiller_serum_1_heal">3</maxStacks>
+  			<duration>10</duration>
+  		</statBoost>
+
+      <statBoost name="damageTakenMultiplier">
+  			<boostType>MULT</boostType>
+  			<amount>0.9</amount>
+  			<shipTarget>ALL</shipTarget>
+  			<crewTarget>ALLIES</crewTarget>
+  			<affectsSelf>true</affectsSelf>
+  			<maxStacks id="instiller_serum_1_damagetaken">3</maxStacks>
+  			<duration>10</duration>
+  		</statBoost>
+  	</statBoosts>
+  	<shots>1</shots>
+  	<fireChance>0</fireChance>
+  	<breachChance>0</breachChance>
+  	<cooldown>10</cooldown>
+  	<power>1</power>
+  	<cost>60</cost>
+  	<bp>4</bp>
+  	<rarity>3</rarity>
+  	<image>instiller_projectile_base</image>
+  	<explosion>instiller_explosion_base</explosion>
+  	<launchSounds>
+  		<sound>bombTeleport</sound>
+  	</launchSounds>
+  	<hitShipSounds>
+  		<sound>smallExplosion</sound>
+  	</hitShipSounds>
+  	<weaponArt>instiller_base</weaponArt>
+  	<iconImage>bomb</iconImage>
+  </weaponBlueprint>
+
+  <weaponBlueprint name="INSTILLER_PHEROMONE_1">
+  	<type>BOMB</type>
+  	<tip>tip_instiller</tip>
+  	<title>Pheromone Instiller MK I</title>
+  	<short>Pher. Instill I</short>
+  	<desc>This instiller multiplies friendly combat damage by 1.5x, and provides a flat 100% buff to movement speed for 5 seconds</desc>
+  	<tooltip>Instiller tooltip here</tooltip>
+  	<damage>0</damage>
+  	<sysDamage>0</sysDamage>
+  	<persDamage>0</persDamage>
+  	<accuracyMod>30</accuracyMod>
+  	<statBoosts>
+  		<statBoost name="moveSpeedMultiplier">
+  			<boostType>FLAT</boostType>
+  			<amount>1</amount>
+  			<shipTarget>ALL</shipTarget>
+  			<crewTarget>ALLIES</crewTarget>
+  			<affectsSelf>true</affectsSelf>
+  			<maxStacks id="instiller_pheromone_1_movement">3</maxStacks>
+  			<duration>5</duration>
+  			<boostAnim>instiller_boostanim_base</boostAnim>
+  		</statBoost>
+
+      <statBoost name="damageMultiplier">
+        <boostType>MULT</boostType>
+        <amount>1.5</amount>
+        <shipTarget>ALL</shipTarget>
+        <crewTarget>ALLIES</crewTarget>
+        <affectsSelf>true</affectsSelf>
+        <maxStacks id="instiller_pheromone_1_damage">3</maxStacks>
+        <duration>5</duration>
+      </statBoost>
+  	</statBoosts>
+  	<shots>1</shots>
+  	<fireChance>0</fireChance>
+  	<breachChance>0</breachChance>
+  	<cooldown>15</cooldown>
+  	<power>2</power>
+  	<cost>60</cost>
+  	<bp>4</bp>
+  	<rarity>3</rarity>
+  	<image>instiller_projectile_base</image>
+  	<explosion>instiller_explosion_base</explosion>
+  	<launchSounds>
+  		<sound>bombTeleport</sound>
+  	</launchSounds>
+  	<hitShipSounds>
+  		<sound>smallExplosion</sound>
+  	</hitShipSounds>
+  	<weaponArt>instiller_base</weaponArt>
+  	<iconImage>bomb</iconImage>
+  </weaponBlueprint>
+
+  <weaponBlueprint name="INSTILLER_SEDATIVE_1">
+  	<type>BOMB</type>
+  	<tip>tip_instiller</tip>
+  	<title>Sedative Instiller MK I</title>
+  	<short>Sed. Instill I</short>
+  	<desc>This instiller multiplies repair speed by 0.25x and halves sabotage and movement speed for 8 seconds</desc>
+  	<tooltip>Instiller tooltip here</tooltip>
+  	<damage>0</damage>
+  	<sysDamage>0</sysDamage>
+  	<persDamage>0</persDamage>
+  	<accuracyMod>30</accuracyMod>
+  	<statBoosts>
+  		<statBoost name="repairSpeed">
+  			<boostType>MULT</boostType>
+  			<amount>0.25</amount>
+  			<shipTarget>ALL</shipTarget>
+  			<crewTarget>ALL</crewTarget>
+  			<affectsSelf>true</affectsSelf>
+  			<maxStacks id="instiller_sedative_1_repair">3</maxStacks>
+  			<duration>8</duration>
+  			<boostAnim>instiller_boostanim_base</boostAnim>
+  		</statBoost>
+
+      <statBoost name="moveSpeedMultiplier">
+  			<boostType>MULT</boostType>
+  			<amount>0.5</amount>
+  			<shipTarget>ALL</shipTarget>
+  			<crewTarget>ALL</crewTarget>
+  			<affectsSelf>true</affectsSelf>
+  			<maxStacks id="instiller_sedative_1_movement">3</maxStacks>
+  			<duration>8</duration>
+  		</statBoost>
+
+      <statBoost name="sabotageSpeedMultiplier">
+  			<boostType>MULT</boostType>
+  			<amount>0.5</amount>
+  			<shipTarget>ALL</shipTarget>
+  			<crewTarget>ALL</crewTarget>
+  			<affectsSelf>true</affectsSelf>
+  			<maxStacks id="instiller_sedative_1_sabotage">3</maxStacks>
+  			<duration>8</duration>
+  		</statBoost>
+
+
+  	</statBoosts>
+  	<shots>1</shots>
+  	<fireChance>0</fireChance>
+  	<breachChance>0</breachChance>
+  	<cooldown>10</cooldown>
+  	<power>1</power>
+  	<cost>60</cost>
+  	<bp>4</bp>
+  	<rarity>3</rarity>
+  	<image>instiller_projectile_base</image>
+  	<explosion>instiller_explosion_base</explosion>
+  	<launchSounds>
+  		<sound>bombTeleport</sound>
+  	</launchSounds>
+  	<hitShipSounds>
+  		<sound>smallExplosion</sound>
+  	</hitShipSounds>
+  	<weaponArt>instiller_base</weaponArt>
+  	<iconImage>bomb</iconImage>
+  </weaponBlueprint>
+
+  <weaponBlueprint name="INSTILLER_SEDATIVE_2">
+  	<type>BOMB</type>
+  	<tip>tip_instiller</tip>
+  	<title>Sedative Instiller MK II</title>
+  	<short>Sed. Instill II</short>
+  	<desc>This instiller multiplies repair speed by 0.1x, multiplies combat damage by 0.75x, and thirds sabotage and movement speed for 8 seconds</desc>
+  	<tooltip>Instiller tooltip here</tooltip>
+  	<damage>0</damage>
+  	<sysDamage>0</sysDamage>
+  	<persDamage>0</persDamage>
+  	<accuracyMod>30</accuracyMod>
+  	<statBoosts>
+  		<statBoost name="repairSpeed">
+  			<boostType>MULT</boostType>
+  			<amount>0.1</amount>
+  			<shipTarget>ALL</shipTarget>
+  			<crewTarget>ALL</crewTarget>
+  			<affectsSelf>true</affectsSelf>
+  			<maxStacks id="instiller_sedative_2_repair">3</maxStacks>
+  			<duration>8</duration>
+  			<boostAnim>instiller_boostanim_base</boostAnim>
+  		</statBoost>
+
+      <statBoost name="moveSpeedMultiplier">
+  			<boostType>MULT</boostType>
+  			<amount>0.33</amount>
+  			<shipTarget>ALL</shipTarget>
+  			<crewTarget>ALL</crewTarget>
+  			<affectsSelf>true</affectsSelf>
+  			<maxStacks id="instiller_sedative_2_movement">3</maxStacks>
+  			<duration>8</duration>
+  		</statBoost>
+
+      <statBoost name="sabotageSpeedMultiplier">
+  			<boostType>MULT</boostType>
+  			<amount>0.33</amount>
+  			<shipTarget>ALL</shipTarget>
+  			<crewTarget>ALL</crewTarget>
+  			<affectsSelf>true</affectsSelf>
+  			<maxStacks id="instiller_sedative_2_sabotage">3</maxStacks>
+  			<duration>8</duration>
+  		</statBoost>
+
+      <statBoost name="damageMultiplier">
+  			<boostType>MULT</boostType>
+  			<amount>0.75</amount>
+  			<shipTarget>ALL</shipTarget>
+  			<crewTarget>ALL</crewTarget>
+  			<affectsSelf>true</affectsSelf>
+  			<maxStacks id="instiller_sedative_2_damage">3</maxStacks>
+  			<duration>8</duration>
+  		</statBoost>
+
+
+  	</statBoosts>
+  	<shots>1</shots>
+  	<fireChance>0</fireChance>
+  	<breachChance>0</breachChance>
+  	<cooldown>10</cooldown>
+  	<power>1</power>
+  	<cost>60</cost>
+  	<bp>4</bp>
+  	<rarity>3</rarity>
+  	<image>instiller_projectile_base</image>
+  	<explosion>instiller_explosion_base</explosion>
+  	<launchSounds>
+  		<sound>bombTeleport</sound>
+  	</launchSounds>
+  	<hitShipSounds>
+  		<sound>smallExplosion</sound>
+  	</hitShipSounds>
+  	<weaponArt>instiller_base</weaponArt>
+  	<iconImage>bomb</iconImage>
+  </weaponBlueprint>
+
+  <weaponBlueprint name="INSTILLER_ADRENALINE_1">
+  	<type>BOMB</type>
+  	<tip>tip_instiller</tip>
+  	<title>Adrenaline Instiller MK I</title>
+  	<short>Adr. Instill I</short>
+  	<desc>This instiller multiplies your crew's repair speed by 1.75x, their sabotage speed by 1.5x, 1.3 flat movement speed buff, and 0.7x ability recharge time fpr 7 seconds. However, they take 1.33x damage from all sources during this time.</desc>
+  	<tooltip>Instiller tooltip here</tooltip>
+  	<damage>0</damage>
+  	<sysDamage>0</sysDamage>
+  	<persDamage>0</persDamage>
+  	<accuracyMod>30</accuracyMod>
+  	<statBoosts>
+  		<statBoost name="sabotageSpeedMultiplier">
+  			<boostType>MULT</boostType>
+  			<amount>1.5</amount>
+  			<shipTarget>ALL</shipTarget>
+  			<crewTarget>ALLIES</crewTarget>
+  			<affectsSelf>true</affectsSelf>
+  			<maxStacks id="instiller_adrenaline_1_sabotage">3</maxStacks>
+  			<duration>7</duration>
+  			<boostAnim>instiller_boostanim_base</boostAnim>
+  		</statBoost>
+
+      <statBoost name="repairSpeed">
+  			<boostType>MULT</boostType>
+  			<amount>1.75</amount>
+  			<shipTarget>ALL</shipTarget>
+  			<crewTarget>ALLIES</crewTarget>
+  			<affectsSelf>true</affectsSelf>
+  			<maxStacks id="instiller_adrenaline_1_repair">3</maxStacks>
+  			<duration>7</duration>
+  		</statBoost>
+
+      <statBoost name="moveSpeedMultiplier">
+  			<boostType>FLAT</boostType>
+  			<amount>1.3</amount>
+  			<shipTarget>ALL</shipTarget>
+  			<crewTarget>ALLIES</crewTarget>
+  			<affectsSelf>true</affectsSelf>
+  			<maxStacks id="instiller_adrenaline_1_movement">3</maxStacks>
+  			<duration>7</duration>
+  		</statBoost>
+
+      <statBoost name="powerRechargeMultiplier">
+  			<boostType>MULT</boostType>
+  			<amount>1.43</amount>
+  			<shipTarget>ALL</shipTarget>
+  			<crewTarget>ALLIES</crewTarget>
+  			<affectsSelf>true</affectsSelf>
+  			<maxStacks id="instiller_adrenaline_1_powerrecharge">3</maxStacks>
+  			<duration>7</duration>
+  		</statBoost>
+
+      <statBoost name="allDamageTakenMultiplier">
+  			<boostType>MULT</boostType>
+  			<amount>1.33</amount>
+  			<shipTarget>ALL</shipTarget>
+  			<crewTarget>ALLIES</crewTarget>
+  			<affectsSelf>true</affectsSelf>
+  			<maxStacks id="instiller_adrenaline_1_alldamagetaken">3</maxStacks>
+  			<duration>7</duration>
+  		</statBoost>
+
+  	</statBoosts>
+  	<shots>1</shots>
+  	<fireChance>0</fireChance>
+  	<breachChance>0</breachChance>
+  	<cooldown>10</cooldown>
+  	<power>2</power>
+  	<cost>60</cost>
+  	<bp>4</bp>
+  	<rarity>3</rarity>
+  	<image>instiller_projectile_base</image>
+  	<explosion>instiller_explosion_base</explosion>
+  	<launchSounds>
+  		<sound>bombTeleport</sound>
+  	</launchSounds>
+  	<hitShipSounds>
+  		<sound>smallExplosion</sound>
+  	</hitShipSounds>
+  	<weaponArt>instiller_base</weaponArt>
+  	<iconImage>bomb</iconImage>
+  </weaponBlueprint>
+
+  <weaponBlueprint name="INSTILLER_STEROID_1">
+  	<type>BOMB</type>
+  	<tip>tip_instiller</tip>
+  	<title>Steroid Instiller MK I</title>
+  	<short>Ster. Instill I</short>
+  	<desc>This instiller multiplies friendly combat damage by 1.4x and multiplies damage taken by 0.7x for 9 seconds. However, all crew afflicted by this weapon will take 1.2x more damage from hazards and be slowed to 0.8x speed, as well as take 15 damage over time.</desc>
+  	<tooltip>Instiller tooltip here</tooltip>
+  	<damage>0</damage>
+  	<sysDamage>0</sysDamage>
+  	<persDamage>0</persDamage>
+  	<accuracyMod>30</accuracyMod>
+  	<statBoosts>
+  		<statBoost name="damageMultiplier">
+  			<boostType>MULT</boostType>
+  			<amount>1.4</amount>
+  			<shipTarget>ALL</shipTarget>
+  			<crewTarget>ALLIES</crewTarget>
+  			<affectsSelf>true</affectsSelf>
+  			<maxStacks id="instiller_steroid_1_damage">3</maxStacks>
+  			<duration>9</duration>
+  			<boostAnim>instiller_boostanim_base</boostAnim>
+  		</statBoost>
+
+      <statBoost name="damageTakenMultiplier">
+  			<boostType>MULT</boostType>
+  			<amount>0.7</amount>
+  			<shipTarget>ALLIES</shipTarget>
+  			<crewTarget>ALL</crewTarget>
+  			<affectsSelf>true</affectsSelf>
+  			<maxStacks id="instiller_steroid_1_damagetaken">3</maxStacks>
+  			<duration>9</duration>
+  		</statBoost>
+
+      <statBoost name="suffocationModifier">
+  			<boostType>MULT</boostType>
+  			<amount>1.2</amount>
+  			<shipTarget>ALLIES</shipTarget>
+  			<crewTarget>ALL</crewTarget>
+  			<affectsSelf>true</affectsSelf>
+  			<maxStacks id="instiller_steroid_1_suffocation">3</maxStacks>
+  			<duration>9</duration>
+  		</statBoost>
+
+      <statBoost name="fireDamageMultiplier">
+  			<boostType>MULT</boostType>
+  			<amount>1.2</amount>
+  			<shipTarget>ALLIES</shipTarget>
+  			<crewTarget>ALL</crewTarget>
+  			<affectsSelf>true</affectsSelf>
+  			<maxStacks id="instiller_steroid_1_fire">3</maxStacks>
+  			<duration>9</duration>
+  		</statBoost>
+
+      <statBoost name="moveSpeedMultiplier">
+  			<boostType>MULT</boostType>
+  			<amount>0.8</amount>
+  			<shipTarget>ALLIES</shipTarget>
+  			<crewTarget>ALL</crewTarget>
+  			<affectsSelf>true</affectsSelf>
+  			<maxStacks id="instiller_steroid_1_movement">3</maxStacks>
+  			<duration>9</duration>
+  		</statBoost>
+
+      <statBoost name="trueHealAmount">
+  			<boostType>FLAT</boostType>
+  			<amount>-1.66</amount>
+  			<shipTarget>ALLIES</shipTarget>
+  			<crewTarget>ALL</crewTarget>
+  			<affectsSelf>true</affectsSelf>
+  			<maxStacks id="instiller_steroid_1_dot">3</maxStacks>
+  			<duration>9</duration>
+  		</statBoost>
+
+  	</statBoosts>
+  	<shots>1</shots>
+  	<fireChance>0</fireChance>
+  	<breachChance>0</breachChance>
+  	<cooldown>10</cooldown>
+  	<power>2</power>
+  	<cost>60</cost>
+  	<bp>4</bp>
+  	<rarity>3</rarity>
+  	<image>instiller_projectile_base</image>
+  	<explosion>instiller_explosion_base</explosion>
+  	<launchSounds>
+  		<sound>bombTeleport</sound>
+  	</launchSounds>
+  	<hitShipSounds>
+  		<sound>smallExplosion</sound>
+  	</hitShipSounds>
+  	<weaponArt>instiller_base</weaponArt>
+  	<iconImage>bomb</iconImage>
+  </weaponBlueprint>
+
+  <weaponBlueprint name="INSTILLER_HAZARD_RESIST_1">
+  	<type>BOMB</type>
+  	<tip>tip_instiller</tip>
+  	<title>Alveolus-Lift Instiller MK I</title>
+  	<short>Alv. Instill I</short>
+  	<desc>This instiller makes all crew hit take 0.4x damage from hazards, be stunned for half as long, as well as move and repair at 1.25x speed for 9 seconds.</desc>
+  	<tooltip>Instiller tooltip here</tooltip>
+  	<damage>0</damage>
+  	<sysDamage>0</sysDamage>
+  	<persDamage>0</persDamage>
+  	<accuracyMod>30</accuracyMod>
+  	<statBoosts>
+  		<statBoost name="stunMultiplier">
+  			<boostType>MULT</boostType>
+  			<amount>0.5</amount>
+  			<shipTarget>ALL</shipTarget>
+  			<crewTarget>ALLIES</crewTarget>
+  			<affectsSelf>true</affectsSelf>
+  			<maxStacks id="instiller_hazard_resist_1_stun">3</maxStacks>
+  			<duration>9</duration>
+  			<boostAnim>instiller_boostanim_base</boostAnim>
+  		</statBoost>
+
+      <statBoost name="suffocationModifier">
+  			<boostType>MULT</boostType>
+  			<amount>0.4</amount>
+  			<shipTarget>ALLIES</shipTarget>
+  			<crewTarget>ALL</crewTarget>
+  			<affectsSelf>true</affectsSelf>
+  			<maxStacks id="instiller_hazard_resist_1_suffocation">3</maxStacks>
+  			<duration>9</duration>
+  		</statBoost>
+
+      <statBoost name="fireDamageMultiplier">
+  			<boostType>MULT</boostType>
+  			<amount>0.4</amount>
+  			<shipTarget>ALLIES</shipTarget>
+  			<crewTarget>ALL</crewTarget>
+  			<affectsSelf>true</affectsSelf>
+  			<maxStacks id="instiller_hazard_resist_1_fire">3</maxStacks>
+  			<duration>9</duration>
+  		</statBoost>
+
+      <statBoost name="repairSpeed">
+  			<boostType>MULT</boostType>
+  			<amount>1.25</amount>
+  			<shipTarget>ALL</shipTarget>
+  			<crewTarget>ALLIES</crewTarget>
+  			<affectsSelf>true</affectsSelf>
+  			<maxStacks id="instiller_hazard_resist_1_repair">3</maxStacks>
+  			<duration>9</duration>
+  		</statBoost>
+
+      <statBoost name="moveSpeedMultiplier">
+  			<boostType>FLAT</boostType>
+  			<amount>1.25</amount>
+  			<shipTarget>ALL</shipTarget>
+  			<crewTarget>ALLIES</crewTarget>
+  			<affectsSelf>true</affectsSelf>
+  			<maxStacks id="instiller_hazard_resist_1_movement">3</maxStacks>
+  			<duration>9</duration>
+  		</statBoost>
+
+  	</statBoosts>
+  	<shots>1</shots>
+  	<fireChance>0</fireChance>
+  	<breachChance>0</breachChance>
+  	<cooldown>10</cooldown>
+  	<power>1</power>
+  	<cost>60</cost>
+  	<bp>4</bp>
+  	<rarity>3</rarity>
+  	<image>instiller_projectile_base</image>
+  	<explosion>instiller_explosion_base</explosion>
+  	<launchSounds>
+  		<sound>bombTeleport</sound>
+  	</launchSounds>
+  	<hitShipSounds>
+  		<sound>smallExplosion</sound>
+  	</hitShipSounds>
+  	<weaponArt>instiller_base</weaponArt>
+  	<iconImage>bomb</iconImage>
+  </weaponBlueprint>
+
+
+  <weaponBlueprint name="INSTILLER_BLIGHT_1">
+  	<type>BOMB</type>
+  	<tip>tip_instiller</tip>
+  	<title>Blight Instiller MK I</title>
+  	<short>Bl. Instill I</short>
+  	<desc>This instiller debuffs enemy crew, making them take 1.2x damage from combat, 1.5x damage from suffocation, as well as having their extinguishing speed reduced by 60% for 8 seconds. Does 35 damage over time to Orchid/Vampweed crew.</desc>
+  	<tooltip>Instiller tooltip here</tooltip>
+  	<damage>0</damage>
+  	<sysDamage>0</sysDamage>
+  	<persDamage>0</persDamage>
+  	<accuracyMod>30</accuracyMod>
+  	<statBoosts>
+  		<statBoost name="damageTakenMultiplier">
+  			<boostType>MULT</boostType>
+  			<amount>1.2</amount>
+  			<shipTarget>ALL</shipTarget>
+  			<crewTarget>ENEMIES</crewTarget>
+  			<affectsSelf>true</affectsSelf>
+  			<maxStacks id="instiller_blight_1_damagetaken">3</maxStacks>
+  			<duration>8</duration>
+  			<boostAnim>instiller_boostanim_base</boostAnim>
+  		</statBoost>
+      <statBoost name="suffocationModifier">
+  			<boostType>MULT</boostType>
+  			<amount>1.5</amount>
+  			<shipTarget>ALL</shipTarget>
+  			<crewTarget>ENEMIES</crewTarget>
+  			<affectsSelf>true</affectsSelf>
+  			<maxStacks id="instiller_blight_1_suffocation">3</maxStacks>
+  			<duration>8</duration>
+  		</statBoost>
+      <statBoost name="fireRepairMultiplier">
+  			<boostType>MULT</boostType>
+  			<amount>0.4</amount>
+  			<shipTarget>ALL</shipTarget>
+  			<crewTarget>ENEMIES</crewTarget>
+  			<affectsSelf>true</affectsSelf>
+  			<maxStacks id="instiller_blight_1_firerepair">3</maxStacks>
+  			<duration>8</duration>
+  		</statBoost>
+      <statBoost name="trueHealAmount">
+  			<boostType>FLAT</boostType>
+  			<amount>-4.375</amount>
+  			<shipTarget>ALL</shipTarget>
+  			<crewTarget>ENEMIES</crewTarget>
+  			<affectsSelf>true</affectsSelf>
+  			<maxStacks id="instiller_blight_1_dot">3</maxStacks>
+  			<duration>8</duration>
+        <whiteList load="LIST_CREW_ORCHID"/>
+  		</statBoost>
+  	</statBoosts>
+  	<shots>1</shots>
+  	<fireChance>0</fireChance>
+  	<breachChance>0</breachChance>
+  	<cooldown>10</cooldown>
+  	<power>1</power>
+  	<cost>60</cost>
+  	<bp>4</bp>
+  	<rarity>3</rarity>
+  	<image>instiller_projectile_base</image>
+  	<explosion>instiller_explosion_base</explosion>
+  	<launchSounds>
+  		<sound>bombTeleport</sound>
+  	</launchSounds>
+  	<hitShipSounds>
+  		<sound>smallExplosion</sound>
+  	</hitShipSounds>
+  	<weaponArt>instiller_base</weaponArt>
+  	<iconImage>bomb</iconImage>
+  </weaponBlueprint>
+
+  <weaponBlueprint name="INSTILLER_ELECTRON_1">
+  	<type>BOMB</type>
+  	<tip>tip_instiller</tip>
+  	<title>Electron Instiller MK I</title>
+  	<short>Elect. Instill I</short>
+  	<desc>This instiller causes all friendlies to drain/provide 1 more power to enemy/allied systems, as well as negating all said abilities for enemy crew for 10 seconds</desc>
+  	<tooltip>Instiller tooltip here</tooltip>
+  	<damage>0</damage>
+  	<sysDamage>0</sysDamage>
+  	<persDamage>0</persDamage>
+  	<accuracyMod>30</accuracyMod>
+  	<statBoosts>
+  		<statBoost name="bonusPower">
+  			<boostType>FLAT</boostType>
+  			<amount>1</amount>
+  			<shipTarget>ALL</shipTarget>
+  			<crewTarget>ALLIES</crewTarget>
+  			<affectsSelf>true</affectsSelf>
+  			<maxStacks id="instiller_electron_1_bonuspower_friendly">3</maxStacks>
+  			<duration>0</duration>
+  			<boostAnim>instiller_boostanim_base</boostAnim>
+  		</statBoost>
+      <statBoost name="powerDrain">
+  			<boostType>FLAT</boostType>
+  			<amount>1</amount>
+  			<shipTarget>ALL</shipTarget>
+  			<crewTarget>ALLIES</crewTarget>
+  			<affectsSelf>true</affectsSelf>
+  			<maxStacks id="instiller_electron_1_powerdrain_friendly">3</maxStacks>
+  			<duration>10</duration>
+  		</statBoost>
+      <statBoost name="bonusPower">
+  			<boostType>SET</boostType>
+  			<amount>0</amount>
+  			<shipTarget>ALL</shipTarget>
+  			<crewTarget>ENEMIES</crewTarget>
+  			<affectsSelf>true</affectsSelf>
+  			<maxStacks id="instiller_electron_1_bonuspower_hostile">3</maxStacks>
+  			<duration>0</duration>
+  			<boostAnim>instiller_boostanim_base</boostAnim>
+  		</statBoost>
+      <statBoost name="powerDrain">
+  			<boostType>SET</boostType>
+  			<amount>0</amount>
+  			<shipTarget>ALL</shipTarget>
+  			<crewTarget>ENEMIES</crewTarget>
+  			<affectsSelf>true</affectsSelf>
+  			<maxStacks id="instiller_electron_1_powerdrain_hostile">3</maxStacks>
+  			<duration>10</duration>
+  		</statBoost>
+  	</statBoosts>
+  	<shots>1</shots>
+  	<fireChance>0</fireChance>
+  	<breachChance>0</breachChance>
+  	<cooldown>10</cooldown>
+  	<power>1</power>
+  	<cost>60</cost>
+  	<bp>4</bp>
+  	<rarity>3</rarity>
+  	<image>instiller_projectile_base</image>
+  	<explosion>instiller_explosion_base</explosion>
+  	<launchSounds>
+  		<sound>bombTeleport</sound>
+  	</launchSounds>
+  	<hitShipSounds>
+  		<sound>smallExplosion</sound>
+  	</hitShipSounds>
+  	<weaponArt>instiller_base</weaponArt>
+  	<iconImage>bomb</iconImage>
+  </weaponBlueprint>
+
+  <weaponBlueprint name="INSTILLER_ELIXIR_1">
+  	<type>BOMB</type>
+  	<tip>tip_instiller</tip>
+  	<title>Elixir Instiller MK I</title>
+  	<short>Elix. Instill I</short>
+  	<desc>This instiller allows allies to see adjacent rooms, heal at 1.5x speed, gain 1.2x health, do 1.1x combat damage, and charge their abilities in 0.9x the time for 10 seconds. All afflicted enemies will have 0.8x heal speed and 0.8x ranged combat damage.</desc>
+  	<tooltip>Instiller tooltip here</tooltip>
+  	<damage>0</damage>
+  	<sysDamage>0</sysDamage>
+  	<persDamage>0</persDamage>
+  	<accuracyMod>30</accuracyMod>
+  	<statBoosts>
+  		<statBoost name="maxHealth">
+  			<boostType>MULT</boostType>
+  			<amount>1.2</amount>
+  			<shipTarget>ALL</shipTarget>
+  			<crewTarget>ALLIES</crewTarget>
+  			<affectsSelf>true</affectsSelf>
+  			<maxStacks id="instiller_elixir_1_maxhealth">3</maxStacks>
+  			<duration>10</duration>
+  			<boostAnim>instiller_boostanim_base</boostAnim>
+  		</statBoost>
+      <statBoost name="healSpeed">
+  			<boostType>MULT</boostType>
+  			<amount>1.5</amount>
+  			<shipTarget>ALL</shipTarget>
+  			<crewTarget>ALLIES</crewTarget>
+  			<affectsSelf>true</affectsSelf>
+  			<maxStacks id="instiller_elixir_1_healspeed_friendly">3</maxStacks>
+  			<duration>10</duration>
+  		</statBoost>
+      <statBoost name="isTelepathic">
+        <boostType>SET</boostType>
+        <value>true</value>
+        <shipTarget>ALL</shipTarget>
+        <crewTarget>ALLIES</crewTarget>
+        <affectsSelf>true</affectsSelf>
+        <duration>10</duration>
+      </statBoost>
+      <statBoost name="rangedDamageMultiplier">
+  			<boostType>MULT</boostType>
+  			<amount>1.1</amount>
+  			<shipTarget>ALL</shipTarget>
+  			<crewTarget>ALLIES</crewTarget>
+  			<affectsSelf>true</affectsSelf>
+  			<maxStacks id="instiller_elixir_1_ranged_damage_friendly">3</maxStacks>
+  			<duration>10</duration>
+  		</statBoost>
+      <statBoost name="powerRechargeMultiplier">
+  			<boostType>MULT</boostType>
+  			<amount>1.111</amount>
+  			<shipTarget>ALL</shipTarget>
+  			<crewTarget>ALLIES</crewTarget>
+  			<affectsSelf>true</affectsSelf>
+  			<maxStacks id="instiller_elixir_1_powerrecharge">3</maxStacks>
+  			<duration>10</duration>
+  		</statBoost>
+
+      <statBoost name="rangedDamageMultiplier">
+  			<boostType>MULT</boostType>
+  			<amount>0.8</amount>
+  			<shipTarget>ALL</shipTarget>
+  			<crewTarget>ENEMIES</crewTarget>
+  			<affectsSelf>true</affectsSelf>
+  			<maxStacks id="instiller_elixir_1_ranged_damage_hostile">3</maxStacks>
+  			<duration>10</duration>
+        <boostAnim>instiller_boostanim_base</boostAnim>
+  		</statBoost>
+      <statBoost name="healSpeed">
+  			<boostType>MULT</boostType>
+  			<amount>0.8</amount>
+  			<shipTarget>ALL</shipTarget>
+  			<crewTarget>ENEMIES</crewTarget>
+  			<affectsSelf>true</affectsSelf>
+  			<maxStacks id="instiller_elixir_1_healspeed_hostile">3</maxStacks>
+  			<duration>10</duration>
+  		</statBoost>
+  	</statBoosts>
+  	<shots>1</shots>
+  	<fireChance>0</fireChance>
+  	<breachChance>0</breachChance>
+  	<cooldown>10</cooldown>
+  	<power>1</power>
+  	<cost>60</cost>
+  	<bp>4</bp>
+  	<rarity>3</rarity>
+  	<image>instiller_projectile_base</image>
+  	<explosion>instiller_explosion_base</explosion>
+  	<launchSounds>
+  		<sound>bombTeleport</sound>
+  	</launchSounds>
+  	<hitShipSounds>
+  		<sound>smallExplosion</sound>
+  	</hitShipSounds>
+  	<weaponArt>instiller_base</weaponArt>
+  	<iconImage>bomb</iconImage>
+  </weaponBlueprint>
+
+  <weaponBlueprint name="INSTILLER_VIRUS_1">
+  	<type>BOMB</type>
+  	<tip>tip_instiller</tip>
+  	<title>Virus Instiller MK I</title>
+  	<short>Vir. Instill I</short>
+  	<desc>This instiller drains 2hp/s from all hit enemies for 5 seconds, as well as causing them to drain 2hp/s from their allies in the room for 5 seconds.</desc>
+  	<tooltip>Instiller tooltip here</tooltip>
+  	<damage>0</damage>
+  	<sysDamage>0</sysDamage>
+  	<persDamage>0</persDamage>
+  	<accuracyMod>30</accuracyMod>
+  	<statBoosts>
+  		<statBoost name="trueHealAmount">
+  			<boostType>FLAT</boostType>
+  			<amount>-2</amount>
+  			<shipTarget>ALL</shipTarget>
+  			<crewTarget>ENEMIES</crewTarget>
+  			<affectsSelf>true</affectsSelf>
+  			<maxStacks id="instiller_virus_1_self_drain">3</maxStacks>
+  			<duration>5</duration>
+  			<boostAnim>instiller_boostanim_base</boostAnim>
+  		</statBoost>
+
+      <statBoost name="statBoost">
+        <boostType>FLAT</boostType>
+  			<shipTarget>ALL</shipTarget>
+  			<crewTarget>ENEMIES</crewTarget>
+  			<affectsSelf>true</affectsSelf>
+  			<maxStacks id="instiller_virus_1_other_drain">3</maxStacks>
+  			<duration>5</duration>
+
+        <statBoost name="trueHealAmount">
+    			<boostType>FLAT</boostType>
+    			<amount>-2</amount>
+    			<shipTarget>CURRENT_ROOM</shipTarget>
+    			<crewTarget>ALLIES</crewTarget>
+    			<affectsSelf>false</affectsSelf>
+    			<duration>5</duration>
+    		</statBoost>
+
+      </statBoost>
+  	</statBoosts>
+  	<shots>1</shots>
+  	<fireChance>0</fireChance>
+  	<breachChance>0</breachChance>
+  	<cooldown>10</cooldown>
+  	<power>1</power>
+  	<cost>60</cost>
+  	<bp>4</bp>
+  	<rarity>3</rarity>
+  	<image>instiller_projectile_base</image>
+  	<explosion>instiller_explosion_base</explosion>
+  	<launchSounds>
+  		<sound>bombTeleport</sound>
+  	</launchSounds>
+  	<hitShipSounds>
+  		<sound>smallExplosion</sound>
+  	</hitShipSounds>
+  	<weaponArt>instiller_base</weaponArt>
+  	<iconImage>bomb</iconImage>
+  </weaponBlueprint>
+</FTL>
